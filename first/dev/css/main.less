@@ -1,0 +1,106 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: FreeSans, Arimo, 'Droid Sans', Helvetica, Arial, sans-serif;
+  background: #ffffff;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000;
+  text-decoration: none;
+}
+
+@color1: #f39323;
+@color2: #02aef0;
+@color3: #90278e;
+@color4: #9cbb43;
+
+header {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 1024px;
+  margin-top: 39px;
+
+  .inner-wrapper {
+    margin: 0 10px;
+
+    .fixed-row {
+      height: 47px;
+    }
+
+    .logo {
+      display: block;
+      background: url('../images/logo.png');
+      width: 279px;
+      height: 57px;
+    }
+
+    .detail-info {
+      font-size: 20px;
+      margin-left: 40px;
+      .place,
+      .date {
+        margin: 0;
+      }
+
+      .date {
+        margin-bottom: 4px;
+      }
+      .place {
+        font-weight: bold;
+      }
+    }
+
+    .share-block {
+      position: relative;
+      top: -15px;
+      float: right;
+
+      [class *= 'social'] {
+        display: inline-block;
+        width: 33px;
+        height: 33px;
+        margin-left: 14px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+
+      .social1 {
+        background: url('../images/social1.png');
+      }
+      .social2 {
+        background: url('../images/social2.png');
+      }
+      .social3 {
+        background: url('../images/social3.png');
+      }
+      .social4 {
+        background: url('../images/social4.png');
+      }
+      .social5 {
+        background: url('../images/social5.png');
+      }
+    }
+  }
+
+  .lang {
+    color: #b4b4b4;
+    float: right;
+    font-size: 16px;
+    margin-bottom: 29px;
+
+    a {
+      color: #b4b4b4;
+
+      &.active {
+        color: #343239;
+      }
+    }
+  }
+}
