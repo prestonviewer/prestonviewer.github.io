@@ -40,21 +40,23 @@ header .inner-wrapper .logo {
 }
 
 header .inner-wrapper .detail-info {
-  font-size: 20px;
+  font-size: 22px;
   margin-left: 40px;
 }
 
 header .inner-wrapper .detail-info .place,
 header .inner-wrapper .detail-info .date {
+  position: relative;
   margin: 0;
 }
 
 header .inner-wrapper .detail-info .date {
-  margin-bottom: 4px;
+  top: -4px;
 }
 
 header .inner-wrapper .detail-info .place {
   font-weight: bold;
+  top: -2px;
 }
 
 header .inner-wrapper .share-block {
