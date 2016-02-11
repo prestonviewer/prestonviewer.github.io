@@ -21,8 +21,7 @@ html {
   height: 100%;
   top: 0;
   left: 0;
-  background: url('../images/background.jpg') center top no-repeat;
-  background-attachment: fixed;
+  background: url('../images/background.jpg') center top fixed;
   z-index: -9;
 }
 
@@ -35,14 +34,14 @@ header .blur {
   position: relative;
   -webkit-filter: blur(10px);
   filter: blur(10px);
-  background: url('../images/background.jpg') center top no-repeat;
-  background-attachment: fixed;
+  background: url('../images/background.jpg') center top fixed;
   height: 100px;
 }
 
 header .mask {
   position: relative;
   height: 100px;
+  background: rgba(255, 255, 255, 0.33);
   top: -100px;
 }
 

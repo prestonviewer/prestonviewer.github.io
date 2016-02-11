@@ -25,8 +25,7 @@ html {
   height: 100%;
   top: 0;
   left: 0;
-  background: @image center top no-repeat;
-  background-attachment: fixed;
+  background: @image center top fixed;
   z-index: @bgLevel;
 }
 
@@ -38,15 +37,14 @@ header {
     position: relative;
     filter: blur(10px);
     // filter: progid:DXImageTransform.Microsoft.Blur(pixelRadius=10);
-    background: @image center top no-repeat;
-    background-attachment: fixed;
+    background: @image center top fixed;
     height: 100px;
   }
 
   .mask {
     position: relative;
     height: 100px;
-    // background: rgba(255, 255, 255, .33);
+    background: rgba(255, 255, 255, .33);
     top: -100px;
   }
 }
