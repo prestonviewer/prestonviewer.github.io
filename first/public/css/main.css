@@ -20,7 +20,7 @@ a:active {
 header {
   margin: 0 auto;
   max-width: 1200px;
-  min-width: 1024px;
+  min-width: 1007px;
   margin-top: 39px;
 }
 
@@ -98,7 +98,6 @@ header .lang {
   color: #b4b4b4;
   float: right;
   font-size: 16px;
-  margin-bottom: 29px;
 }
 
 header .lang a {
@@ -111,8 +110,9 @@ header .lang a.active {
 
 nav {
   margin: 0 auto;
+  margin-top: 29px;
   max-width: 1200px;
-  min-width: 1024px;
+  min-width: 1007px;
 }
 
 nav .nav-item {
@@ -148,23 +148,23 @@ nav .nav-item a.item4 {
   background: #9cbb43;
 }
 
-article.promo {
-  min-width: 1024px;
+.promo {
+  min-width: 1007px;
   margin: 0 auto;
 }
 
-article.promo .image {
+.promo .image {
   background: url('../images/promo.png') top center no-repeat;
   height: 594px;
 }
 
-article.promo .controls {
+.promo .controls {
   position: relative;
   z-index: 100;
 }
 
-article.promo .controls .next,
-article.promo .controls .prev {
+.promo .controls .next,
+.promo .controls .prev {
   position: absolute;
   width: 28px;
   height: 59px;
@@ -172,12 +172,66 @@ article.promo .controls .prev {
   cursor: pointer;
 }
 
-article.promo .controls .prev {
+.promo .controls .prev {
   background: url('../images/prev.png');
   left: 80px;
 }
 
-article.promo .controls .next {
+.promo .controls .next {
   background: url('../images/next.png');
   right: 80px;
+}
+
+.offers {
+  margin: 0 auto;
+  margin-top: 52px;
+  max-width: 1200px;
+  min-width: 1007px;
+}
+
+.offers .offer-row {
+  margin-bottom: 60px;
+}
+
+.offers .pure-u-1-2:nth-child(2n-1) .offer-item {
+  margin-right: 30px;
+}
+
+.offers .pure-u-1-2:nth-child(2n) .offer-item {
+  margin-left: 30px;
+}
+
+.offers .offer-item .heading {
+  padding-left: 28px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.offers .offer-item .description {
+  margin-top: 35px;
+}
+
+.offers .offer-item .link {
+  margin-top: 20px;
+}
+
+.offers .offer-item .link a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.offers .offer-item.item1 .heading {
+  background: #f39323 url('../images/heading1.png') center right no-repeat;
+}
+
+.offers .offer-item.item2 .heading {
+  background: #02aef0 url('../images/heading2.png') center right no-repeat;
+}
+
+.offers .offer-item.item3 .heading {
+  background: #90278e url('../images/heading3.png') center right no-repeat;
+}
+
+.offers .offer-item.item4 .heading {
+  background: #9cbb43 url('../images/heading4.png') center right no-repeat;
 }

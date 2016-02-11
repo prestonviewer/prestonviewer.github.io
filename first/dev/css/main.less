@@ -1,3 +1,6 @@
+@maxWidth: 1200px;
+@minWidth: 1007px;
+
 body {
   padding: 0;
   margin: 0;
@@ -24,8 +27,8 @@ a:active {
 
 header {
   margin: 0 auto;
-  max-width: 1200px;
-  min-width: 1024px;
+  max-width: @maxWidth;
+  min-width: @minWidth;
   margin-top: 39px;
 
   .inner-wrapper {
@@ -96,7 +99,6 @@ header {
     color: #b4b4b4;
     float: right;
     font-size: 16px;
-    margin-bottom: 29px;
 
     a {
       color: #b4b4b4;
@@ -110,8 +112,9 @@ header {
 
 nav {
   margin: 0 auto;
-  max-width: 1200px;
-  min-width: 1024px;
+  margin-top: 29px;
+  max-width: @maxWidth;
+  min-width: @minWidth;
   @navRowHeight: 58px;
 
   .nav-item {
@@ -123,6 +126,7 @@ nav {
         margin-right: 0;
       }
     }
+
     a {
       display: block;
       color: #ffffff;
@@ -149,15 +153,14 @@ nav {
   }
 }
 
-article.promo {
-  min-width: 1024px;
+.promo {
+  min-width: @minWidth;
   margin: 0 auto;
 
   .image {
     height: 594px;
     background: url('../images/promo.png') top center no-repeat;
     height: 594px;
-
   }
 
   .controls {
@@ -181,6 +184,63 @@ article.promo {
     .next {
       background: url('../images/next.png');
       right: 80px;
+    }
+  }
+}
+
+.offers {
+  margin: 0 auto;
+  margin-top: 52px;
+  max-width: @maxWidth;
+  min-width: @minWidth;
+
+  .offer-row {
+    margin-bottom: 60px;
+  }
+
+  .pure-u-1-2:nth-child(2n-1) .offer-item {
+    margin-right: 30px;
+  }
+
+  .pure-u-1-2:nth-child(2n) .offer-item {
+    margin-left: 30px;
+  }
+
+  .offer-item {
+    @itemHeadingHeight: 60px;
+
+    .heading {
+      padding-left: 28px;
+      height: @itemHeadingHeight;
+      line-height: @itemHeadingHeight;
+    }
+
+    .description {
+      margin-top: 35px;
+    }
+    .link {
+      margin-top: 20px;
+
+      a {
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
+
+    &.item1 .heading {
+      background: @color1 url('../images/heading1.png') center right no-repeat;
+    }
+
+    &.item2 .heading {
+      background: @color2 url('../images/heading2.png') center right no-repeat;
+    }
+
+    &.item3 .heading {
+      background: @color3 url('../images/heading3.png') center right no-repeat;
+    }
+
+    &.item4 .heading {
+      background: @color4 url('../images/heading4.png') center right no-repeat;
     }
   }
 }
