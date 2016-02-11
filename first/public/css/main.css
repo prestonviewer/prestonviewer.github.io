@@ -2,15 +2,18 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  font-family: FreeSans, Arimo, 'Droid Sans', Helvetica, Arial, sans-serif;
   background: #ffffff;
+}
+
+body * {
+  font-family: 'PT Sans';
 }
 
 a:link,
 a:visited,
 a:hover,
 a:active {
-  color: #000;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -104,4 +107,77 @@ header .lang a {
 
 header .lang a.active {
   color: #343239;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 1024px;
+}
+
+nav .nav-item {
+  height: 58px;
+  line-height: 58px;
+}
+
+nav .nav-item:last-child a {
+  margin-right: 0;
+}
+
+nav .nav-item a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+nav .nav-item a.item1 {
+  background: #f39323;
+}
+
+nav .nav-item a.item2 {
+  background: #02aef0;
+}
+
+nav .nav-item a.item3 {
+  background: #90278e;
+}
+
+nav .nav-item a.item4 {
+  background: #9cbb43;
+}
+
+article.promo {
+  min-width: 1024px;
+  margin: 0 auto;
+}
+
+article.promo .image {
+  background: url('../images/promo.png') top center no-repeat;
+  height: 594px;
+}
+
+article.promo .controls {
+  position: relative;
+  z-index: 100;
+}
+
+article.promo .controls .next,
+article.promo .controls .prev {
+  position: absolute;
+  width: 28px;
+  height: 59px;
+  top: 257px;
+  cursor: pointer;
+}
+
+article.promo .controls .prev {
+  background: url('../images/prev.png');
+  left: 80px;
+}
+
+article.promo .controls .next {
+  background: url('../images/next.png');
+  right: 80px;
 }
