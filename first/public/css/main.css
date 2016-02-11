@@ -193,11 +193,15 @@ nav .nav-item a.item4 {
   margin-bottom: 60px;
 }
 
-.offers .pure-u-1-2:nth-child(2n-1) .offer-item {
+.offers .offer-row:last-child {
+  margin-bottom: 0;
+}
+
+.offers .pure-u-1-2:first-child .offer-item {
   margin-right: 30px;
 }
 
-.offers .pure-u-1-2:nth-child(2n) .offer-item {
+.offers .pure-u-1-2:last-child .offer-item {
   margin-left: 30px;
 }
 
@@ -234,4 +238,21 @@ nav .nav-item a.item4 {
 
 .offers .offer-item.item4 .heading {
   background: #9cbb43 url('../images/heading4.png') center right no-repeat;
+}
+
+footer {
+  background: #1d2124;
+  color: #5a5c5e;
+  padding: 27px 0;
+  margin-top: 87px;
+}
+
+footer .inner-wrapper {
+  min-width: 1007px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .inner-wrapper a {
+  color: #ffffff;
 }

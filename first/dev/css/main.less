@@ -196,13 +196,17 @@ nav {
 
   .offer-row {
     margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  .pure-u-1-2:nth-child(2n-1) .offer-item {
+  .pure-u-1-2:first-child .offer-item {
     margin-right: 30px;
   }
 
-  .pure-u-1-2:nth-child(2n) .offer-item {
+  .pure-u-1-2:last-child .offer-item {
     margin-left: 30px;
   }
 
@@ -241,6 +245,23 @@ nav {
 
     &.item4 .heading {
       background: @color4 url('../images/heading4.png') center right no-repeat;
+    }
+  }
+}
+
+footer {
+  background: #1d2124;
+  color: #5a5c5e;
+  padding: 27px 0;
+  margin-top: 87px;
+
+  .inner-wrapper {
+    min-width: @minWidth;
+    max-width: @maxWidth;
+    margin: 0 auto;
+
+    a {
+      color: #ffffff;
     }
   }
 }
