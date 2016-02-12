@@ -161,10 +161,23 @@ nav {
   min-width: @minWidth;
   margin: 0 auto;
 
-  .image {
+  .slider-container {
+    position: relative;
     height: 594px;
-    background: url('../images/promo.png') top center no-repeat;
-    height: 594px;
+    overflow: hidden;
+
+    .slide1,
+    .slide2 {
+      height: 594px;
+      background-attachment: fixed;
+      background: url('../images/promo.png') top center;
+    }
+
+    &::after {
+      clear: both;
+      display: block;
+      content: ' ';
+    }
   }
 
   .controls {
@@ -221,7 +234,7 @@ nav {
       padding-left: 28px;
       height: @itemHeadingHeight;
       line-height: @itemHeadingHeight;
-      color:#fff;
+      color: #ffffff;
       font-size: 20px;
     }
 

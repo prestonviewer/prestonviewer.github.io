@@ -155,9 +155,23 @@ nav .nav-item a.item4 {
   margin: 0 auto;
 }
 
-.promo .image {
-  background: url('../images/promo.png') top center no-repeat;
+.promo .slider-container {
+  position: relative;
   height: 594px;
+  overflow: hidden;
+}
+
+.promo .slider-container .slide1,
+.promo .slider-container .slide2 {
+  height: 594px;
+  background-attachment: fixed;
+  background: url('../images/promo.png') top center;
+}
+
+.promo .slider-container::after {
+  clear: both;
+  display: block;
+  content: ' ';
 }
 
 .promo .controls {
@@ -211,7 +225,7 @@ nav .nav-item a.item4 {
   padding-left: 28px;
   height: 60px;
   line-height: 60px;
-  color: #fff;
+  color: #ffffff;
   font-size: 20px;
 }
 
@@ -249,7 +263,6 @@ footer {
   color: #5a5c5e;
   padding: 27px 0;
   margin-top: 87px;
-  min-width: 1007px;
 }
 
 footer .inner-wrapper {
