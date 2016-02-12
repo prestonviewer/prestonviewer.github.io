@@ -249,6 +249,7 @@ footer {
   color: #5a5c5e;
   padding: 27px 0;
   margin-top: 87px;
+  min-width: 1007px;
 }
 
 footer .inner-wrapper {
