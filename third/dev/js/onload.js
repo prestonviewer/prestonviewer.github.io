@@ -19,6 +19,23 @@ $('body').mousewheel(function(event) {
   }
 });
 
+window.lastY = 0;
+$(document).bind('touchmove', function (e){
+     var currentY = e.originalEvent.touches[0].clientY;
+     var now = Date.now();
+
+     if (currentY > lastY && now - lastScrollTime > 50){
+       if (getNavalenoHeight() - rowHeight < document.body.clientHeight) {
+         createCherries($('.dispencer'));
+         lastScrollTime = now;
+       } else {
+         alert('Ну все.');
+       }
+     }
+
+     lastY = currentY;
+});
+
 function createCherries(el) {
   var classes = ['c1', 'c2', 'c3', 'c4', 'c5', 'c6'];
   var cherries = [];
