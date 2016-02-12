@@ -10,11 +10,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<link rel="stylesheet" href="css/main.css">
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+		<script src="js/modernizr-custom.js"></script>
 	</head>
 	<body>
 		<div class="background-layer"></div>
 		<header>
-			<div class="blur"></div>
+			<!-- <div class="blur"></div> -->
+			<img src="images/background.jpg" class="blur-bg">
+			<canvas class="blur" height="100px"></canvas>
 			<div class="mask"></div>
 		</header>
 		<div class="dummy"></div>
@@ -28,5 +31,9 @@
 			<p>Tempore assumenda dicta fuga hic, aut! Nam, ipsa nostrum placeat illum atque debitis facilis, quo id quaerat eius tenetur sint officia quia architecto iure molestiae vitae vero excepturi, ullam mollitia.</p>
 			</div>
 		</div>
+
+		<script src="js/class.js"></script>
+		<script src="js/stackblur.min.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>

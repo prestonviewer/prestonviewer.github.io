@@ -25,7 +25,7 @@ html {
   height: 100%;
   top: 0;
   left: 0;
-  background: @image center top fixed;
+  background: @image center top fixed no-repeat;
   z-index: @bgLevel;
 }
 
@@ -33,30 +33,24 @@ header {
   height: 100px;
   overflow: hidden;
 
+  .blur-bg {
+    display: none;
+  }
+
   .blur {
+    display: block;
     position: relative;
-    filter: blur(10px);
-    background: @image center top fixed;
     height: 100px;
-  }
-
-  .blur-svg-filter {
-    filter: url(#blur);
-  }
-
-  .blur-css-filter {
-    -webkit-filter: blur(10px);
-       -moz-filter: blur(10px);
-         -o-filter: blur(10px);
-        -ms-filter: blur(10px);
-    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
+    width: 100%;
+    overflow: hidden;
   }
 
   .mask {
-    position: relative;
+    position: absolute;;
     height: 100px;
     background: rgba(255, 255, 255, .33);
-    top: -100px;
+    top: 0;
+    width: 100%;
   }
 }
 

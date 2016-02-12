@@ -21,7 +21,7 @@ html {
   height: 100%;
   top: 0;
   left: 0;
-  background: url('../images/background.jpg') center top fixed;
+  background: url('../images/background.jpg') center top fixed no-repeat;
   z-index: -9;
 }
 
@@ -30,23 +30,24 @@ header {
   overflow: hidden;
 }
 
+header .blur-bg {
+  display: none;
+}
+
 header .blur {
+  display: block;
   position: relative;
-          filter: blur(10px);
-  -webkit-filter: blur(10px);
-     -moz-filter: blur(10px);
-       -o-filter: blur(10px);
-      -ms-filter: blur(10px);
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='10', enabled='true');
-  background: url('../images/background.jpg') center top fixed;
   height: 100px;
+  width: 100%;
+  overflow: hidden;
 }
 
 header .mask {
-  position: relative;
+  position: absolute;
   height: 100px;
-  background: rgba(255, 255, 255, .33);
-  top: -100px;
+  background: rgba(255, 255, 255, 0.33);
+  top: 0;
+  width: 100%;
 }
 
 .container {
