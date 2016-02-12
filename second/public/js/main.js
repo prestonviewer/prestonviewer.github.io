@@ -8,9 +8,10 @@ var resizeCanvas = function() {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-  StackBlur.image(blurImage, canvas, 20, false);
-
-  resizeCanvas();
+  blurImage.addEventListener('load', function() {
+    StackBlur.image(blurImage, canvas, 20, false);
+    resizeCanvas();
+  });
 });
 
 window.addEventListener('scroll', function(e) {
