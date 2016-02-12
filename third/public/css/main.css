@@ -1,0 +1,94 @@
+body {
+  background: url('../images/background.jpg') top center no-repeat;
+  background-color: #002d00;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+.dispencer {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  padding: 0 25%;
+}
+
+.dispencer .cherry {
+  top: -100px;
+}
+
+.cherry {
+  position: absolute;
+  transition-property: top, left;
+  transition-timing-function: linear;
+}
+
+.cherry.c1 {
+  width: 104px;
+  height: 102px;
+  background: url('../images/c1.png');
+}
+
+.cherry.c2 {
+  width: 100px;
+  height: 99px;
+  transform: translateX(10px);
+  background: url('../images/c2.png');
+}
+
+.cherry.c3 {
+  width: 93px;
+  height: 92px;
+  background: url('../images/c3.png');
+}
+
+.cherry.c4 {
+  width: 101px;
+  height: 105px;
+  background: url('../images/c4.png');
+}
+
+.cherry.c5 {
+  width: 103px;
+  height: 110px;
+  background: url('../images/c5.png');
+}
+
+.cherry.c6 {
+  width: 111px;
+  height: 99px;
+  background: url('../images/c6.png');
+}
+
+.slow-rotation {
+  animation: infinite-spinning 1600ms linear;
+}
+
+.medium-rotation {
+  animation: infinite-spinning 1000ms linear;
+}
+
+.fast-rotation {
+  animation: infinite-spinning 800ms linear;
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
