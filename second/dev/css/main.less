@@ -36,9 +36,20 @@ header {
   .blur {
     position: relative;
     filter: blur(10px);
-    // filter: progid:DXImageTransform.Microsoft.Blur(pixelRadius=10);
     background: @image center top fixed;
     height: 100px;
+  }
+
+  .blur-svg-filter {
+    filter: url(#blur);
+  }
+
+  .blur-css-filter {
+    -webkit-filter: blur(10px);
+       -moz-filter: blur(10px);
+         -o-filter: blur(10px);
+        -ms-filter: blur(10px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
   }
 
   .mask {

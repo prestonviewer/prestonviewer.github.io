@@ -24,7 +24,7 @@ gulp.task('less', function() {
 
   gulp.src('./dev/css/*.less')
     .pipe(less())
-    .pipe(myth())
+    .pipe(myth({ browsers: ['> 90%'] }))
     .pipe(gulp.dest('./public/css/'))
     .pipe(livereload());
 });
@@ -61,7 +61,7 @@ gulp.task('watch', function() {
   livereload.listen();
   gulp.watch('dev/*.html', ['html']);
   gulp.watch('dev/images/*.png', ['images']);
-  gulp.watch('dev/js/**/**/*', ['js']);
+  gulp.watch('dev/js/*.js', ['js']);
   gulp.watch('dev/css/*.less', ['less']);
 
   gulp.run('connect');
