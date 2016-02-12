@@ -72,14 +72,17 @@ html * {
 }
 
 .slow-rotation {
+  transition: top 1600ms linear;
   animation: infinite-spinning 1600ms linear;
 }
 
 .medium-rotation {
+  transition: top 1000ms linear;
   animation: infinite-spinning 1000ms linear;
 }
 
 .fast-rotation {
+  transition: top 800ms linear;
   animation: infinite-spinning 800ms linear;
 }
 

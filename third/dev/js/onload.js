@@ -51,20 +51,18 @@ function createCherries(el) {
   var offsetLeft = gut;
   cherries.forEach(function(el) {
     var elW = $(el).width(), elH = $(el).height();
-    offsetLeft = random(gut, windowWidth - gut);
-
-    $(el).css({ left: offsetLeft + 'px', top: -elH + 'px' });
+    offsetLeft = random(-gut, windowWidth - gut);
+$(el).css({ left: offsetLeft + 'px', top: -elH + 'px' });
 
     var rotation = randomRotation();
     var duration = getDuration(rotation);
     var navaleno = getNavalenoHeight();
 
     $(el).addClass(rotation);
-    $(el).animate({ top: random(windowHeight - elH - navaleno, windowHeight - elH / 2 - navaleno) + 'px' }, {
-      duration: duration,
-      complete: function() {
-        $(el).removeClass(rotation);
-      }
+    $(el).css({ top: random(windowHeight - elH - navaleno, windowHeight - elH / 2 - navaleno) + 'px' });
+
+    $(el).on('transitionend', function() {
+      $(this).removeClass(rotation);
     });
   });
 
@@ -72,7 +70,7 @@ function createCherries(el) {
 }
 
 function getNavalenoHeight() {
-  var inRow = Math.floor(document.body.clientWidth / 100 * 3)
+  var inRow = Math.floor(document.body.clientWidth / 100 * 3.5)
   var navalenoHeight = rowHeight * Math.floor(cherryCount / inRow);
 
   return navalenoHeight;
