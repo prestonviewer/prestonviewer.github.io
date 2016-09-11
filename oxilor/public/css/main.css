@@ -1,19 +1,19 @@
 @font-face {
   font-weight: normal;
   font-family: HeliosC;
-  src: url('../fonts/HELIOSC.otf');
+  src: url('https://github.com/prestonviewer/prestonviewer.github.io/blob/master/oxilor/public/fonts/HELIOSC.OTF');
 }
 
 @font-face {
   font-weight: normal;
   font-family: HeliosLightC;
-  src: url('../fonts/HELIOSLIGHTC.otf');
+  src: url('https://github.com/prestonviewer/prestonviewer.github.io/blob/master/oxilor/public/fonts/HELIOSLIGHTC.OTF');
 }
 
 @font-face {
   font-weight: normal;
   font-family: HeliosThin;
-  src: url('../fonts/HELIOSTHIN.otf');
+  src: url('https://github.com/prestonviewer/prestonviewer.github.io/blob/master/oxilor/public/fonts/HELIOSTHIN.OTF');
 }
 
 body {
