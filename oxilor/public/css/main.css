@@ -42,6 +42,8 @@ a:active {
   min-height: 100vh;
   display: table;
   padding: 0;
+  -webkit-transition: width ease 800ms;
+  transition: width ease 800ms;
 }
 
 .container.wrapper .sidebar {
