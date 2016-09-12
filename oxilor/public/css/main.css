@@ -1,19 +1,19 @@
 @font-face {
   font-weight: normal;
   font-family: HeliosC;
-  src: url('../fonts/HELIOSC.otf');
+  src: url('../fonts/HELIOSC.OTF');
 }
 
 @font-face {
   font-weight: normal;
   font-family: HeliosLightC;
-  src: url('../fonts/HELIOSLIGHTC.otf');
+  src: url('../fonts/HELIOSLIGHTC.OTF');
 }
 
 @font-face {
   font-weight: normal;
   font-family: HeliosThin;
-  src: url('../fonts/HELIOSTHIN.otf');
+  src: url('../fonts/HELIOSTHIN.OTF');
 }
 
 body {
@@ -48,10 +48,12 @@ a:active {
 
 .container.wrapper .sidebar {
   display: table-cell;
+  vertical-align: top;
 }
 
 .container.wrapper .content {
   display: table-cell;
+  vertical-align: top;
 }
 
 .sidebar {
